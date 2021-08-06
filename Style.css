@@ -1,0 +1,382 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Segoe UI;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  
+  /*font-family: 'Handlee', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;*/
+
+}
+.row{
+  width: 100%;
+}
+.row::after{
+  clear: both;
+  content: '';
+  display: block;
+}
+[class*="col-"]{
+  float: left;
+  padding: 15px;
+}
+[class*="col-"]{
+  width: 100%;
+}
+
+/*header starts from here*/
+header{
+  background-color: #be7b00;
+  padding: 0px 1px;
+  text-align: center;
+}
+.logo{
+  width: 80px;
+  height: 80px;
+  line-height:70px;
+  text-align: center;
+  color:#aed55fe1;
+}
+nav ul li{
+  display: block;
+}
+nav ul li a{
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  background-color:#7b5000 ;
+  border-radius: 15px;
+  line-height: 50px;
+  margin: 20px;
+  padding: 0px 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.5s;
+}
+nav ul li a:hover {
+  border-radius: 0.5px;
+  background-color: #42403a;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+/*header ends here*/
+
+/*banner design Starts from here*/
+#banner-section{
+  background: url('restaurant-table.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner-contents{
+  padding: 90px 10px;
+  text-align: center;
+  color: white;
+}
+.banner-contents h1{
+  width: 100%;
+  margin: 15px auto;
+  font-size: 3rem;
+  background: rgba(174,213,95,0.882);
+  border-radius: 5px;
+  padding: 10px;
+  color: #be7b00;
+  font-family: 'Handlee', cursive;
+}
+.banner-contents p{
+  max-width: 300px;
+  margin: 15px auto;
+  border-radius: 20px;
+  text-align: center;
+  background-color:rgba(154,182,99,0.882);
+  padding: 10px;
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.btn{
+  background:linear-gradient(#be7b00,#d98d03);
+  width: 150px;
+  padding: 10px;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.btn:hover{
+  background:linear-gradient(#d98d03,#be7b00);
+  width: 160px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  
+}
+/*banner design ends here*/
+
+/*About starts here*/
+#about-us{
+  padding: 1%;
+}
+.about-us-contents{
+   text-align: center;
+}
+.about-us-contents h2{
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.about-us-contents p{
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/*About ends here*/
+
+/*food menu section starts here*/
+#menu-section{
+  padding: 1%;
+}
+.card-body{
+  text-align: center;
+}
+.card-body img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.item-desc{
+  background-color: rgba(154,182,99,0.882);
+}
+.item-name{
+  background-color:#be7b00;
+  padding: 10px;
+  color: white;
+}
+.item-desc > p{
+  color: white;
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.card{
+  transition: 0.3s;
+}
+.card:hover{
+  transform: scale(1.07);
+}
+/*food menu section ends from here*/
+
+/*Contact starts*/
+#contact{
+  padding: 1%;
+  background-color: #5d6a90e1;
+}
+.contact-details{
+  text-align: center;
+  color: black
+  padding: 20px 0;
+}
+.contact-details p,address {
+  font-size: 0.7rem;
+}
+.contact-details h3{
+ 
+  letter-spacing: 1.5px;
+  word-spacing: 2.5px;
+}
+.contact-details h5{
+  padding: 3px;
+}
+.map{
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+/*Contact ends
+
+
+
+/*Footer starts from here*/
+footer{
+  padding: 1%;
+  color: white;
+  background-color: #394157;
+}
+footer p{
+  line-height: 32px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.social-menus{
+  text-align: center;
+}
+.style-icon{
+  color: white;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.4s;
+  background-color:#001f6a;
+  text-align: center;
+  transition: 0.4s;
+}
+.style-icon:hover{
+  background-color:#4d4d4d;
+  transform: scale(1.2);
+}
+
+footer::after{
+  clear: both;
+  display: table;
+  content: '';
+}
+
+/*Footer ends here*/
+
+
+/*small devices(portrait tablet and large phone , 576px and up)*/
+@media (min-width:576px){
+ .col-sm-1{width: 8.33%;}
+.col-sm-2{width: 16.66%;}
+.col-sm-3{width: 25%;}
+.col-sm-4{width: 33.33%;}
+.col-sm-5{width: 41.66%;}
+.col-sm-6{width: 50%;}
+.col-sm-7{width: 58.33%;}
+.col-sm-8{width: 66.66%;}
+.col-sm-9{width: 75%;}
+.col-sm-10{width: 83.33%;}
+.col-sm-11{width: 91.66%;}
+.col-sm-12{width: 100%;} 
+}
+
+
+/*medium devices(medium tablet and large phone , 768px and up)*/
+@media (min-width:768px){
+  
+  .logo-div{
+    float: left;
+  }
+   nav ul{
+    float: right;
+  }
+  nav ul li{
+    display: inline;
+    float: left;
+  }
+  nav ul li a{
+    display: inline;
+    float: left;
+    background-color: transparent;
+    transition: 0.2s;
+  }
+  nav ul li a:hover{
+    background-color: ;
+  }
+  nav::after{
+    display: table;
+    clear: both;
+    content: '';
+  }
+  
+  
+  
+.col-md-1{width: 8.33%;}
+.col-md-2{width: 16.66%;}
+.col-md-3{width: 25%;}
+.col-md-4{width: 33.33%;}
+.col-md-5{width: 41.66%;}
+.col-md-6{width: 50%;}
+.col-md-7{width: 58.33%;}
+.col-md-8{width: 66.66%;}
+.col-md-9{width: 75%;}
+.col-md-10{width: 83.33%;}
+.col-md-11{width: 91.66%;}
+.col-md-12{width: 100%;} 
+}
+
+/*large devices(laptop/destrop ,992px and up)*/
+@media (min-width:992px){
+ 
+  .logo-div{
+    float: left;
+  }
+  nav ul{
+    float: right;
+  }
+  nav ul li{
+    display: inline;
+    float: left;
+  }
+  nav ul li a{
+    display: inline;
+    float: left;
+    background-color: transparent;
+    transition: 0.2s;
+  }
+  nav ul li a:hover{
+    background-color: ;
+  }
+  nav::after{
+    display: table;
+    clear: both;
+    content: '';
+  }
+  /* banner starts here  */
+    #banner-section {
+       position: relative;
+       height: 100vh;
+    }
+    .banner-contents {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
+    }
+    .banner-contents h1 {
+        width: 700px;
+        font-size: 3.5rem;      
+    }
+    .banner-contents p {
+        width: 500px;
+        font-size: 2rem;
+    }
+    /* banner ends here */ 
+/*Footer Starts*/
+footer p{
+  text-align: left;
+}
+.social-menus{
+  text-align: right;
+}
+/*Footer ends*/
+
+
+.col-lg-1{width: 8.33%;}
+.col-lg-2{width: 16.66%;}
+.col-lg-3{width: 25%;}
+.col-lg-4{width: 33.33%;}
+.col-lg-5{width: 41.66%;}
+.col-lg-6{width: 50%;}
+.col-lg-7{width: 58.33%;}
+.col-lg-8{width: 66.66%;}
+.col-lg-9{width: 75%;}
+.col-lg-10{width: 83.33%;}
+.col-lg-11{width: 91.66%;}
+.col-lg-12{width: 100%;} 
+}
